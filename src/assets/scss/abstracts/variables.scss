@@ -1,0 +1,41 @@
+/* variables */
+
+// Colors
+$links: #ef45a3;
+$links-hover: darken($links, 10%);
+$button: #00bbb3;
+$button-hover: lighten($links, 5%);
+$button-second: #2b88c6;
+$button-second-hover: lighten($button-second, 5%);
+$text-color: #000;
+$background: #fff;
+$background-dark: #0d0c18;
+$background-grey: #303435;
+$important: #ff4f4f;
+$error: #e74c3c;
+$background-gradient: linear-gradient(135deg, $button 30%, $button-second 100%);
+$border: 1px solid #eee;
+
+// Fonts
+$font-family: Futura, Arial, Verdana, sans-serif;
+$font-family-title: FuturaBold, Arial, Verdana, sans-serif;
+$font-size-12: 12px;
+$font-size-14: 14px;
+
+// Button
+$button-size-40: 40px;
+$border-radius-8: 8px;
+
+// Transition
+$transition: all 0.5s ease;
+
+// Media
+$sizes: (
+  'xxs': 380px,
+  'xs': 480px,
+  's': 639px,
+  'm': 767px,
+  'l': 991px,
+  'xl': 1120px,
+  'xxl': 1279px,
+);

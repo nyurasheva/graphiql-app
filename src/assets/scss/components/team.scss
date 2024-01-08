@@ -1,0 +1,246 @@
+.team {
+  width: 100%;
+  padding: 50px 0 0;
+  background: #f7f7f7;
+  background: $background-gradient;
+
+  @include media('xs') {
+    padding: 30px 0 0;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    @include flex();
+
+    img {
+      max-height: 600px;
+      padding-top: 15px;
+
+      @include media('l') {
+        max-height: 500px;
+      }
+
+      @include media('m') {
+        max-height: 430px;
+      }
+
+      @include media('s') {
+        max-height: 350px;
+      }
+
+      @include media('xs') {
+        max-height: 250px;
+      }
+
+      @include media('xxs') {
+        max-height: 200px;
+      }
+    }
+  }
+
+  &__item {
+    @include flexColumn();
+    position: relative;
+    margin: 1rem 0 0;
+    padding: 2rem 0.5rem 0;
+    user-select: none;
+
+    @include media('s') {
+      padding: 1rem 0.3rem 0;
+      margin: 0;
+    }
+
+    @include media('xs') {
+      padding: 1rem 0.2rem 0;
+    }
+
+    @include media('xxs') {
+      padding: 1rem 0.1rem 0;
+    }
+
+    &.visible {
+      h3,
+      img {
+        transform: translateY(0);
+      }
+
+      h4 {
+        transform: rotate(360deg);
+      }
+    }
+
+    @include media('s') {
+      text-align: center;
+    }
+  }
+
+  &__name {
+    font-size: 2rem;
+    margin: 0;
+    color: $links;
+    transform: translateY(-100px);
+    transition: transform 1s ease;
+
+    @include media('m') {
+      font-size: 1.75rem;
+    }
+
+    @include media('s') {
+      font-size: 1.6rem;
+    }
+
+    @include media('xs') {
+      font-size: 1.2rem;
+    }
+
+    @include media('xxs') {
+      font-size: 1.05rem;
+    }
+  }
+
+  &__role {
+    background-color: #673ab733;
+    border-radius: 5px;
+    border-left: 5px solid #673ab7;
+    font-weight: 500;
+    margin: 1em 0;
+    padding: 0.5rem;
+    transition: transform 1s ease;
+
+    @include media('xs') {
+      font-size: 0.9rem;
+    }
+
+    @include media('xxs') {
+      font-size: 0.8rem;
+      padding: 0.3rem;
+    }
+  }
+
+  &__github {
+    color: $background;
+    text-decoration: none;
+    @include line();
+    transition: $transition;
+
+    @include media('xs') {
+      font-size: 0.9rem;
+    }
+
+    @include media('xxs') {
+      font-size: 0.75rem;
+    }
+
+    span {
+      margin-right: 5px;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        scale: (1.1);
+      }
+    }
+  }
+
+  &__contribution-list {
+    @include flexColumn($align: flex-start);
+    position: absolute;
+    top: 35%;
+    left: -35%;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+
+    @include media('s') {
+      left: -40%;
+    }
+
+    @include media('xs') {
+      left: -55%;
+    }
+
+    &.team2 {
+      left: -18%;
+
+      @include media('s') {
+        left: -25%;
+      }
+
+      @include media('xxs') {
+        left: -32%;
+      }
+    }
+
+    &.team3 {
+      left: 100%;
+
+      @include media('s') {
+        left: 95%;
+      }
+
+      @include media('xs') {
+        left: 88%;
+      }
+    }
+
+    @include media('m') {
+      justify-content: center;
+    }
+
+    li {
+      background-color: #f321b042;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      padding: 0.5rem 0.5rem;
+      border-left: 5px solid #f321b0;
+      margin: 8px 0;
+      transition: transform 2s ease;
+      z-index: 2;
+
+      @include media('s') {
+        font-size: 0.85rem;
+        padding: 0.25rem 0.25rem;
+      }
+
+      @include media('xs') {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.2rem;
+      }
+
+      @include media('xxs') {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.2rem;
+      }
+
+      &.visible {
+        &:nth-child(1) {
+          transform: rotate(350deg);
+        }
+
+        &:nth-child(2) {
+          transform: rotate(370deg);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(390deg);
+        }
+
+        &:nth-child(4) {
+          transform: rotate(344deg);
+        }
+
+        &:nth-child(5) {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+
+  &__photo {
+    transform: translateY(50px);
+    transition: transform 1s ease;
+  }
+}

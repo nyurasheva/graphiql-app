@@ -1,0 +1,63 @@
+/* buttons */
+
+.button {
+  background: $links;
+  color: $background;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: $button-size-40;
+  height: $button-size-40;
+  white-space: normal;
+  line-height: 1.2;
+  padding: 5px 15px;
+  border: none;
+  background-clip: border-box;
+  letter-spacing: normal;
+  text-transform: none;
+  border-radius: 40px;
+  transition: $transition;
+
+  &:hover {
+    color: $background;
+    background: $button-hover;
+    cursor: pointer;
+    box-shadow:
+      0 0 0 0.0625rem #241c15,
+      0 0.375em 0 0 #241c15;
+    transform: translateY(calc(-1 * 0.375em));
+  }
+}
+
+.button-second {
+  background: $background-gradient;
+  transition: $transition;
+
+  &:hover {
+    background: linear-gradient(135deg, #00cac2 30%, #2f90d2 100%);
+  }
+
+  &.confirm {
+    min-width: 161px;
+
+    span {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+  }
+}
+
+.button-transparent {
+  background: transparent;
+  color: $links;
+  border: 2px solid $links;
+
+  &:hover {
+    border: 2px solid transparent;
+  }
+}

@@ -1,0 +1,79 @@
+/* mixins */
+
+@mixin line() {
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+
+  &:after {
+    content: '';
+    background: $links;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    display: block;
+    height: 1px;
+    width: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.6, 0.4, 1);
+  }
+
+  &:hover:after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@mixin flex($justify: center, $align: center, $wrap: nowrap) {
+  display: flex;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flexColumn($justify: flex-start, $align: center, $wrap: nowrap) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin font(
+  $family: $font-family,
+  $size: 1rem,
+  $height: 1,
+  $weight: normal,
+  $spacing: normal,
+  $color: $text-color
+) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+  color: $color;
+}
+
+@mixin buttonHover() {
+  @media (hover: hover) {
+    cursor: pointer;
+    background: $color-primary-light;
+    color: $color-dark-3xl;
+    border-color: $color-primary-light;
+  }
+}
+
+@mixin media($media) {
+  @each $size, $resolution in $sizes {
+    @if $media ==$size {
+      @media (max-width: $resolution) {
+        @content;
+      }
+    }
+  }
+}
