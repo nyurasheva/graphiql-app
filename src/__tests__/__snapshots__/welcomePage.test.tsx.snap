@@ -1,0 +1,578 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome Page should be equal Welcome Page snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="welcome"
+  >
+    <div
+      class="video"
+    >
+      <video
+        autoplay=""
+        class="video__content"
+        loop=""
+        playsinline=""
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      class="welcome__title "
+    >
+      <div
+        class="container"
+      >
+        <h1
+          class="title-animation "
+        >
+          <span>
+            GraphQL
+          </span>
+            — this is the ability to harness all the power
+          <span>
+             GraphQL
+          </span>
+          .
+        </h1>
+        <span
+          class="welcome__description"
+        >
+          make a request into your own universe
+        </span>
+        <p>
+          The task is to implement a playground/IDE for working with GraphQL queries. GraphQL is a query language used by client applications to handle data. GraphQL is associated with the concept of a schema that allows organizing the creation, reading, updating, and deleting of data in the application. GraphiQL is an open-source tool. In addition to the IDE itself for working with GraphQL queries, authorization capabilities are implemented to grant access to the tool only to authorized users. 
+        </p>
+      </div>
+    </div>
+    <div
+      class="plus "
+    >
+      <div
+        class="plus__content container"
+      >
+        <h2
+          class="plus__title title-animation "
+        >
+          Advantages
+        </h2>
+        <div
+          class="plus__description"
+        >
+          <div
+            class="plus__item "
+          >
+            <h3>
+              Efficiency
+            </h3>
+            <p>
+              Clients receive exactly the data they need, no more, no less.
+            </p>
+          </div>
+          <div
+            class="plus__item "
+          >
+            <h3>
+              Flexibility
+            </h3>
+            <p>
+              Clients can request multiple resources in a single query.
+            </p>
+          </div>
+          <div
+            class="plus__item "
+          >
+            <h3>
+              Version Control
+            </h3>
+            <p>
+              No need for version control.
+            </p>
+          </div>
+          <div
+            class="plus__item "
+          >
+            <h3>
+              Strict Typing
+            </h3>
+            <p>
+              Type checking at the query level.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a
+        class=""
+        href="/main"
+      >
+        <button
+          class="button"
+        >
+          Go to the editor
+        </button>
+      </a>
+    </div>
+    <div
+      class="about "
+    >
+      <div
+        class="about__content"
+      >
+        <h2
+          class="about__title title-animation "
+        >
+          You get it!
+        </h2>
+        <div
+          class="container"
+        >
+          <div
+            class="about__item "
+          >
+            <div
+              class="about__images "
+            >
+              <img
+                alt="Convenient Editor"
+                class="about__img"
+                src="test-file-stub"
+              />
+            </div>
+            <div
+              class="about__descriptions "
+            >
+              <h3
+                class="about__subtitle"
+              >
+                Convenient Editor
+              </h3>
+              <p>
+                This is a lightweight and interactive GraphQL development environment in the browser, offering an intuitive interface that facilitates exploring and experimenting with GraphQL API.
+              </p>
+              <div
+                class="about__number"
+              >
+                1
+              </div>
+            </div>
+          </div>
+          <div
+            class="about__item "
+          >
+            <div
+              class="about__images "
+            >
+              <img
+                alt="Customizable Header"
+                class="about__img"
+                src="test-file-stub"
+              />
+            </div>
+            <div
+              class="about__descriptions "
+            >
+              <h3
+                class="about__subtitle"
+              >
+                Customizable Header
+              </h3>
+              <p>
+                You can parameterize your queries, making them more dynamic and reusable.
+              </p>
+              <div
+                class="about__number"
+              >
+                2
+              </div>
+            </div>
+          </div>
+          <div
+            class="about__item "
+          >
+            <div
+              class="about__images "
+            >
+              <img
+                alt="Variables"
+                class="about__img"
+                src="test-file-stub"
+              />
+            </div>
+            <div
+              class="about__descriptions "
+            >
+              <h3
+                class="about__subtitle"
+              >
+                Variables
+              </h3>
+              <p>
+                Instead of hardcoding values directly into the query, you can define variables and pass their values during execution.
+              </p>
+              <div
+                class="about__number"
+              >
+                3
+              </div>
+            </div>
+          </div>
+          <div
+            class="about__item "
+          >
+            <div
+              class="about__images "
+            >
+              <img
+                alt="API Modification"
+                class="about__img"
+                src="test-file-stub"
+              />
+            </div>
+            <div
+              class="about__descriptions "
+            >
+              <h3
+                class="about__subtitle"
+              >
+                API Modification
+              </h3>
+              <p>
+                Various APIs can be used.
+              </p>
+              <div
+                class="about__number"
+              >
+                4
+              </div>
+            </div>
+          </div>
+          <div
+            class="about__item "
+          >
+            <div
+              class="about__images "
+            >
+              <img
+                alt="Interactive Documentation"
+                class="about__img"
+                src="test-file-stub"
+              />
+            </div>
+            <div
+              class="about__descriptions "
+            >
+              <h3
+                class="about__subtitle"
+              >
+                Interactive Documentation
+              </h3>
+              <p>
+                Explore schema documentation, including types, fields, and arguments, providing useful information while composing your queries.
+              </p>
+              <div
+                class="about__number"
+              >
+                5
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="about__svg"
+      >
+        <img
+          alt="Line"
+          src="test-file-stub"
+        />
+      </div>
+    </div>
+    <div
+      class="dog "
+    >
+      <div
+        class="dog__content container"
+      >
+        <div
+          class="dog__img "
+        >
+          <img
+            alt="Dog"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          class="dog__description"
+        >
+          <h2
+            class="dog__title title-animation "
+          >
+            Let's do something together!
+          </h2>
+          <p>
+            Try to use our editor created thanks to the course 
+            <a
+              href="https://rs.school/react/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              RS School.
+            </a>
+          </p>
+          <p>
+            By taking courses, you get: free training, technological materials, a mentor, new friends, a certificate and much more.
+          </p>
+          <div
+            class="dog__buttons"
+          >
+            <a
+              class=""
+              href="/main"
+            >
+              <button
+                class="button button-transparent"
+              >
+                Go to the editor
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="team "
+    >
+      <div
+        class="team__content container"
+      >
+        <h2
+          class="team__title title-animation "
+        >
+          Our team
+        </h2>
+        <div
+          class="team__list"
+        >
+          <div
+            class="team__item "
+          >
+            <h3
+              class="team__name"
+            >
+              Anastasiia
+            </h3>
+            <h4
+              class="team__role"
+            >
+              Developer
+            </h4>
+            <a
+              class="team__github"
+              href="https://github.com/nyurasheva"
+              rel="noreferrer"
+              target="_blank"
+              title="Anastasiia GitHub"
+            >
+              <span
+                aria-label="github"
+                class="anticon anticon-github"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="github"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+                  />
+                </svg>
+              </span>
+              nyurasheva
+            </a>
+            <ul
+              class="team__contribution-list team1"
+            >
+              <li
+                class=""
+              >
+                Welcome
+              </li>
+              <li
+                class=""
+              >
+                Design
+              </li>
+              <li
+                class=""
+              >
+                Editor
+              </li>
+              <li
+                class=""
+              >
+                Footer
+              </li>
+            </ul>
+            <img
+              alt="Anastasiia"
+              class="team__photo"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            class="team__item "
+          >
+            <h3
+              class="team__name"
+            >
+              Aleksandr
+            </h3>
+            <h4
+              class="team__role"
+            >
+              Team Lead
+            </h4>
+            <a
+              class="team__github"
+              href="https://github.com/forsyterun"
+              rel="noreferrer"
+              target="_blank"
+              title="Aleksandr GitHub"
+            >
+              <span
+                aria-label="github"
+                class="anticon anticon-github"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="github"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+                  />
+                </svg>
+              </span>
+              forsyterun
+            </a>
+            <ul
+              class="team__contribution-list team2"
+            >
+              <li
+                class=""
+              >
+                Readme
+              </li>
+              <li
+                class=""
+              >
+                Docs
+              </li>
+              <li
+                class=""
+              >
+                Video
+              </li>
+              <li
+                class=""
+              >
+                Tests
+              </li>
+            </ul>
+            <img
+              alt="Aleksandr"
+              class="team__photo"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            class="team__item "
+          >
+            <h3
+              class="team__name"
+            >
+              Katsiaryna
+            </h3>
+            <h4
+              class="team__role"
+            >
+              Developer
+            </h4>
+            <a
+              class="team__github"
+              href="https://github.com/massaracsh7"
+              rel="noreferrer"
+              target="_blank"
+              title="Katsiaryna GitHub"
+            >
+              <span
+                aria-label="github"
+                class="anticon anticon-github"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="github"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+                  />
+                </svg>
+              </span>
+              massaracsh7
+            </a>
+            <ul
+              class="team__contribution-list team3"
+            >
+              <li
+                class=""
+              >
+                Headers
+              </li>
+              <li
+                class=""
+              >
+                Query
+              </li>
+              <li
+                class=""
+              >
+                Variables
+              </li>
+              <li
+                class=""
+              >
+                Endpoint
+              </li>
+              <li
+                class=""
+              >
+                Auth
+              </li>
+            </ul>
+            <img
+              alt="Katsiaryna"
+              class="team__photo"
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

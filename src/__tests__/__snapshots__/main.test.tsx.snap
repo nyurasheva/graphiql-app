@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`main component should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container main"
+  >
+    <h1
+      class="main__title"
+    >
+      GraphiQL Editor
+    </h1>
+    <div
+      class="api"
+    >
+      <div
+        class="api__wrapper"
+      >
+        <div
+          class="api__label"
+        >
+          API
+        </div>
+      </div>
+    </div>
+    <div
+      class="headers"
+    >
+      <div
+        class="headers__wrapper"
+      >
+        <div
+          class="headers__label"
+        >
+          Headers
+        </div>
+      </div>
+    </div>
+    <div
+      class="variables"
+    >
+      <div
+        class="variables__wrapper"
+      >
+        <div
+          class="variables__label"
+        >
+          Variables
+        </div>
+      </div>
+    </div>
+    <div
+      class="editor"
+    >
+      <div
+        class="editor__wrapper"
+      >
+        <div
+          class="editor__left"
+        />
+        <div
+          class="editor__right"
+        />
+      </div>
+    </div>
+    <aside
+      class=""
+    >
+      <div
+        class="docs-container"
+      >
+        <button
+          class="button button-transparent"
+          type="button"
+        >
+          Go up
+        </button>
+        <ul
+          class="fieldSchema-container"
+        />
+      </div>
+      <button
+        class="docs-button"
+        disabled=""
+      >
+        Docs
+      </button>
+    </aside>
+  </div>
+</DocumentFragment>
+`;

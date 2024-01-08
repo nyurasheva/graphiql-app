@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component should match Login Page snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="authorization"
+    >
+      <div
+        class="authorization__container"
+      >
+        <h1>
+          Sign in
+        </h1>
+        <form
+          class="form"
+        >
+          <label
+            class="label "
+            for="email"
+          >
+            <span>
+              Email:
+            </span>
+            <input
+              id="email"
+              name="email"
+              placeholder="email@gmail.com"
+              type="text"
+            />
+          </label>
+          <label
+            class="label "
+            for="password"
+          >
+            <span>
+              Password (minimum 8 symbols, including a digit, letter, and special character)
+            </span>
+            <input
+              id="password"
+              name="password"
+              type="password"
+            />
+          </label>
+          <button
+            class="button button-second"
+            type="submit"
+          >
+            Sign in
+          </button>
+        </form>
+      </div>
+      <div
+        class="authorization__information"
+      >
+        <h4>
+          Not registered?
+        </h4>
+        <p
+          class="white"
+        >
+          Creating an account will take no more than a minute 
+        </p>
+        <a
+          class=""
+          href="/registration"
+        >
+          Create an account
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
