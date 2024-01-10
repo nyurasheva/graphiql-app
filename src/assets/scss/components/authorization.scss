@@ -1,0 +1,101 @@
+/* authorization */
+
+.authorization {
+  @include flex($justify: space-between, $align: baseline);
+  width: 100%;
+  padding: 20px 0;
+  gap: 20px;
+
+  @include media('m') {
+    @include flexColumn($align: stretch);
+    gap: 35px;
+  }
+
+  &__container,
+  &__information {
+    flex: 1;
+    text-align: left;
+  }
+
+  &__container {
+    h1 {
+      text-align: left;
+      color: #ffe1f1;
+    }
+
+    .form {
+      @include flexColumn($align: stretch);
+    }
+
+    .label {
+      @include flexColumn($align: start);
+      margin-bottom: 25px;
+      position: relative;
+      width: auto;
+      color: $text-color;
+      float: left;
+      padding: 6px 0;
+
+      span {
+        color: #9ffffb;
+      }
+
+      input {
+        width: 80%;
+        min-width: 300px;
+
+        @include media('xxs') {
+          width: 75%;
+          min-width: 200px;
+        }
+      }
+
+      &.error {
+        span {
+          color: $error;
+
+          @include media('l') {
+            font-size: 0.8rem;
+          }
+        }
+
+        input {
+          border-color: $error;
+        }
+      }
+    }
+
+    .button {
+      margin-top: 15px;
+    }
+  }
+
+  &__information {
+    h4 {
+      @include font($family: $font-family-title, $size: 1.4rem);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      color: #bdc3c7;
+    }
+
+    p {
+      padding: 15px 0;
+    }
+  }
+
+  &__login {
+    margin-top: 15px;
+    @include font($family: $font-family-title, $color: $background);
+  }
+}
+
+.error-message {
+  top: 70px;
+  position: absolute;
+  color: $important;
+  font-size: 0.8rem;
+
+  @include media('xxs') {
+    font-size: 10px;
+  }
+}

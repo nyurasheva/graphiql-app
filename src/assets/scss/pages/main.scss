@@ -1,0 +1,16 @@
+/* main pages*/
+
+.title-animation {
+  opacity: 0.001;
+  transform: translate3d(0, 7rem, 0);
+
+  &.visible {
+    opacity: 1;
+    transform: translateZ(0);
+    transition: transform, opacity;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1),
+      cubic-bezier(0.42, 0, 1, 1);
+    transition-duration: 1s, 0.5s;
+    transition-delay: 0s, 0s;
+  }
+}

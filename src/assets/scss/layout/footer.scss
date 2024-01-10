@@ -1,0 +1,67 @@
+/* footer */
+
+.footer {
+  flex-shrink: 0;
+  @include font($family: $font-family-title);
+
+  &__content {
+    @include flex($justify: space-between, $wrap: wrap);
+    padding: 1em 0;
+    gap: 10px 40px;
+    color: $background;
+
+    @include media('s') {
+      gap: 10px;
+    }
+
+    & > * {
+      flex: 1;
+    }
+  }
+
+  &__svg {
+    height: 3rem;
+    fill: $background;
+    transition: 0.25s;
+    filter: invert(100%);
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  &__rss-link {
+    text-align: left;
+
+    svg {
+      background: url('../svg/rs.svg') center / contain no-repeat;
+      width: 8rem;
+
+      @include media('s') {
+        width: 5rem;
+      }
+    }
+  }
+
+  &__gh {
+    @include flex();
+    gap: 1rem;
+
+    &-link svg {
+      background: url('../svg/github.svg') center / contain no-repeat;
+      width: 3rem;
+
+      @include media('s') {
+        width: 2rem;
+      }
+    }
+  }
+
+  &__year-link {
+    text-align: right;
+
+    @include media('s') {
+      font-size: 0.8rem;
+    }
+  }
+}

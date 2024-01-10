@@ -1,0 +1,82 @@
+/* plus */
+
+.plus {
+  width: 100%;
+  background: $background;
+  padding: 50px 0px;
+
+  @include media('m') {
+    padding: 30px 0px;
+  }
+
+  &__content {
+    @include flexColumn($align: stretch);
+  }
+
+  &__title {
+    padding-bottom: 30px;
+    text-align: left;
+  }
+
+  &__description {
+    @include flex();
+    gap: 5rem;
+    padding-bottom: 50px;
+
+    @include media('xl') {
+      gap: 3rem;
+    }
+
+    @include media('l') {
+      gap: 1rem;
+    }
+
+    @include media('m') {
+      flex-wrap: wrap;
+    }
+
+    @include media('xs') {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    flex: 1;
+    text-align: left;
+    align-self: stretch;
+    padding: 20px;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: $background;
+    background-position: center center;
+    border-color: $links;
+    border-style: solid;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition:
+      opacity 1s ease,
+      transform 1s ease;
+    position: relative;
+
+    @include media('m') {
+      min-width: 45%;
+    }
+
+    &:nth-child(even) {
+      transform: translateY(50%) translateX(-50%);
+    }
+
+    &:nth-child(odd) {
+      transform: translateY(-50%) translateX(50%);
+    }
+
+    &.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    h3 {
+      @include font($family: $font-family-title, $size: 1.15rem, $weight: bold);
+    }
+  }
+}

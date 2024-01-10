@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should be equal Welcome Page snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="footer container"
+  >
+    <div
+      class="footer__content"
+    >
+      <a
+        class="footer__rss-link"
+        href="https://rs.school/react/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <svg
+          class="footer__svg"
+        />
+      </a>
+      <div
+        class="footer__gh"
+      >
+        <a
+          class="footer__gh-link"
+          href="https://github.com/nyurasheva"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <svg
+            class="footer__svg"
+          />
+        </a>
+        <a
+          class="footer__gh-link"
+          href="https://github.com/forsyterun"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <svg
+            class="footer__svg"
+          />
+        </a>
+        <a
+          class="footer__gh-link"
+          href="https://github.com/massaracsh7"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <svg
+            class="footer__svg"
+          />
+        </a>
+      </div>
+      <div
+        class="footer__year-link"
+      >
+        <span>
+          @Copyright 2024
+        </span>
+         
+        <a
+          href="/"
+        >
+          GraphiQL
+        </a>
+      </div>
+    </div>
+  </footer>
+</DocumentFragment>
+`;

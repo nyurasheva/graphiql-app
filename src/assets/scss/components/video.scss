@@ -1,0 +1,18 @@
+.video {
+  width: 100%;
+  height: calc(100vh - 8rem);
+  position: relative;
+  overflow: hidden;
+
+  @include media('s') {
+    height: calc(100vh - 5rem);
+  }
+
+  &__content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -1px;
+    left: 0;
+  }
+}

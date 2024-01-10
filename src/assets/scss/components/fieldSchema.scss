@@ -1,0 +1,48 @@
+.fieldSchema {
+  &-container {
+    @include flexColumn(flex-start, flex-start);
+    row-gap: 1rem;
+  }
+
+  &__element {
+    @include flexColumn(flex-start, flex-start);
+    row-gap: 0.2rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    & p {
+      text-align: left;
+      font-size: 10px;
+    }
+
+    & span {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__title {
+    @include flex();
+
+    &-content {
+      color: #e06c76;
+      cursor: pointer;
+    }
+
+    > span {
+      padding-left: 5px;
+      color: #d0d0d0;
+    }
+  }
+
+  &__subtitle,
+  &__type {
+    color: #62aeed;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+
+  &__description {
+    color: #d0d0d0;
+  }
+}

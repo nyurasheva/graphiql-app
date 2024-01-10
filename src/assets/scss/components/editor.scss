@@ -1,0 +1,288 @@
+/* editor */
+
+.main__title {
+  color: #9ffffb;
+}
+
+.api,
+.headers,
+.variables {
+  @include flex($justify: space-between, $align: end);
+  gap: 2rem;
+  margin: 0 0 20px;
+  color: $background;
+  position: relative;
+  background: #1f1f1f;
+  padding: 10px;
+  border: solid 1px #2b2b2b;
+
+  &__wrapper {
+    @include flexColumn($align: stretch);
+    flex: 1 1 auto;
+    gap: 0.5rem;
+  }
+
+  &__content {
+    @include flex();
+    gap: 10px;
+  }
+
+  &__endpoint-text {
+    white-space: nowrap;
+  }
+
+  &__input {
+    width: 100%;
+    height: 36px;
+    border: $border;
+    border-radius: 8px;
+    padding: 0 8px;
+  }
+
+  &__label {
+    min-width: 130px;
+    text-align: left;
+    color: #9ffffb;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 60%;
+      margin-left: 6px;
+      transform: translateY(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: #9ffffc transparent transparent transparent;
+    }
+
+    &.open:after {
+      top: 15%;
+      border-color: transparent transparent #9ffffc transparent;
+    }
+  }
+
+  .attention-message {
+    top: 15%;
+
+    @include media('xs') {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.editor {
+  padding-bottom: 30px;
+
+  &__wrapper {
+    @include flex($justify: space-between, $align: stretch, $wrap: wrap);
+    border: solid 10px #0d0c18;
+    border-radius: 4px;
+    margin: 0;
+
+    @include media('s') {
+      flex-direction: column;
+    }
+
+    * {
+      font-family: menlo, monospace;
+      font-size: 1rem;
+      line-height: 150%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    flex: 1;
+    border-left: solid 1px #2b2b2b;
+    border-bottom: solid 1px #2b2b2b;
+
+    @include media('s') {
+      width: 100%;
+    }
+  }
+
+  &__left {
+    .editor__content {
+      background: #282c34;
+    }
+
+    .editor__numbers {
+      position: absolute;
+      left: 0;
+    }
+
+    .editor__text {
+      padding: 0;
+
+      .cm-gutters {
+        background-color: #181818;
+        color: #99999a;
+        width: 6%;
+        justify-content: flex-end;
+
+        @include media('xxl') {
+          width: 8%;
+        }
+
+        @include media('l') {
+          width: 10%;
+        }
+
+        @include media('m') {
+          width: 12%;
+        }
+
+        @include media('s') {
+          width: 6%;
+        }
+
+        @include media('xs') {
+          width: 8%;
+        }
+
+        @include media('xxs') {
+          width: 12%;
+        }
+      }
+
+      .cm-activeLineGutter {
+        background-color: #181818;
+        color: $links;
+      }
+
+      .cm-content {
+        padding-top: 10px;
+      }
+
+      .cm-focused {
+        outline: none;
+      }
+    }
+  }
+
+  &__right {
+    border-right: solid 1px #2b2b2b;
+  }
+
+  &__header {
+    @include flex($justify: space-between);
+    min-height: 52px;
+    text-align: left;
+    padding: 10px 15px;
+    background: #181818;
+    border-top: solid 1px #2b2b2b;
+    border-bottom: solid 1px #2b2b2b;
+    border-radius: 2px 2px 0 0;
+    color: #ffffff99;
+  }
+
+  &__content {
+    @include flex($align: stretch, $justify: stretch);
+    color: #739db3;
+    flex: 1 0 auto;
+    position: relative;
+    height: 45svh;
+    background: #181818;
+    overflow: auto;
+  }
+
+  &__numbers {
+    @include flexColumn($align: stretch);
+    color: #999;
+    background: #181818;
+    font-family: menlo, monospace;
+    padding: 10px;
+    height: 100%;
+    line-height: 150%;
+    text-align: right;
+    width: 6%;
+    flex-shrink: 0;
+
+    @include media('xxl') {
+      width: 8%;
+    }
+
+    @include media('l') {
+      width: 10%;
+    }
+
+    @include media('m') {
+      width: 12%;
+    }
+
+    @include media('s') {
+      width: 6%;
+    }
+
+    @include media('xs') {
+      width: 8%;
+    }
+
+    @include media('xxs') {
+      width: 12%;
+    }
+  }
+
+  &__text {
+    @include flexColumn($align: stretch);
+    width: 100%;
+    background: #1f1f1f;
+  }
+
+  &__query {
+    height: 100%;
+    border: none;
+    background: #282c34;
+    text-align: left;
+    color: $background;
+
+    &:hover {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &__response {
+    text-align: left;
+    background: #1f1f1f;
+    padding: 10px;
+    position: absolute;
+  }
+
+  &__buttons {
+    @include flex();
+    gap: 10px;
+  }
+
+  &__play,
+  &__play:hover {
+    min-width: 30px;
+    height: 30px;
+    background: url(/src/assets/svg/play.svg) no-repeat center center/cover;
+  }
+
+  &__format,
+  &__format:hover {
+    min-width: 30px;
+    height: 30px;
+    background: url(/src/assets/svg/format.svg) no-repeat center center/cover;
+  }
+}
+
+.attention-message {
+  position: absolute;
+  z-index: 10;
+  right: 10%;
+  bottom: 15%;
+  color: $error;
+
+  @include media('xl') {
+    bottom: -30%;
+  }
+}

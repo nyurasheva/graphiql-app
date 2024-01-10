@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditorSection component should be equal EditorSection snapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="exception"
+    >
+      <div
+        class="exception__code"
+      >
+        404
+        <span
+          class="exception__code-txt"
+        >
+          Error
+        </span>
+      </div>
+      <div
+        class="exception__title-info"
+      >
+        <h1
+          class="exception__title"
+        >
+          Sorry! We could not find what you were looking for. 
+        </h1>
+        <p
+          class="exception__info"
+        >
+          The page was not found.
+        </p>
+        <div
+          class="exception__links"
+        >
+          <div
+            class="exception__links-item"
+          >
+            <a
+              aria-current="page"
+              class="exception__links-a active"
+              href="/"
+              title=""
+            >
+              Go to home page
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

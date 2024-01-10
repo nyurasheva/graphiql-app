@@ -1,0 +1,29 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.circle {
+  animation: rotate 3s infinite;
+  background-image: url('../../svg/circles.svg');
+  background-repeat: no-repeat;
+  width: 135px;
+  height: 135px;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,260 @@
+/* basic */
+
+@font-face {
+  font-family: Futura;
+  font-display: swap;
+  src: url(/src/assets/fonts/futura/Futura-Maxi.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FuturaBold;
+  font-display: swap;
+  src: url(/src/assets/fonts/futura/Futura-Maxi-Bold.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  @include font($size: $font-size-14);
+  background-color: $background;
+  overflow-x: hidden;
+
+  @include media('s') {
+    @include font($size: $font-size-12);
+  }
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  @include flexColumn();
+  margin: 0;
+  color: $text-color;
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100svh;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  flex-grow: 1;
+  background: $background-grey;
+}
+
+body,
+p,
+div,
+li {
+  font-size: 1rem;
+}
+
+h1 {
+  @include font(
+    $family: $font-family-title,
+    $size: 2rem,
+    $height: 1.1,
+    $color: $background
+  );
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  @include font(
+    $family: $font-family-title,
+    $size: 2.3rem,
+    $height: 1.1,
+    $weight: bold
+  );
+}
+
+h3 {
+  @include font(
+    $family: $font-family-title,
+    $size: 2rem,
+    $height: 1.1,
+    $weight: bold
+  );
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  &:hover {
+    border: none;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &[disabled]:not(.product__decrease):not(.quantity__increase):not(
+      .quantity__decrease
+    ):not(.goods__control),
+  &[disabled]:not(.product__decrease):not(.quantity__increase):not(
+      .quantity__decrease
+    ):not(.goods__control):hover {
+    background-color: gray;
+    color: $background;
+    cursor: not-allowed;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-size: 0;
+  border: 0;
+}
+
+li {
+  margin: 0;
+  padding: 2px 0;
+  text-indent: 0;
+  list-style: none;
+}
+
+a {
+  font-weight: 500;
+  color: $links;
+  text-decoration: inherit;
+  transition: $transition;
+
+  &:hover {
+    color: $links-hover;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 6px 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea {
+  @include font($size: 0.8rem, $color: $button-second);
+  min-height: $button-size-40;
+  height: $button-size-40;
+  outline: none !important;
+  border-color: #d5d5d5;
+  border-radius: 8px;
+  background: $background;
+  padding: 4px 8px;
+  border: $border;
+  font-style: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  line-height: normal;
+  transition: $transition;
+
+  &:focus,
+  &:hover {
+    border-color: $links;
+    box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.1);
+  }
+
+  &:focus {
+    outline: 0;
+    transition: border 0.2s linear 0s;
+  }
+}
+
+.wrapper {
+  @include flexColumn($align: inherit);
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  background: $background-dark;
+  width: 100vw;
+  min-height: 100svh;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  min-width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+
+  &:after {
+    content: '';
+    background: $links;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    display: block;
+    height: 1px;
+    width: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.6, 0.4, 1);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    background-color: #fad7eec5;
+    transition:
+      width 0.3s ease-out,
+      height 0.3s ease-out,
+      top 0.3s ease-out,
+      left 0.3s ease-out;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover:after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+
+  &:hover::before {
+    width: 100px;
+    height: 100px;
+
+    @include media('s') {
+      height: 50px;
+    }
+  }
+}
+
+.white {
+  color: $background;
+}

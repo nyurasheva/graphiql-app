@@ -1,0 +1,49 @@
+/* dog */
+
+.dog {
+  background: $background;
+  width: 100%;
+  margin-top: -1px;
+
+  &__content {
+    @include flex();
+    padding-bottom: 40px;
+
+    @include media('s') {
+      flex-direction: column-reverse;
+      gap: 20px;
+      padding: 30px 0 20px;
+    }
+  }
+
+  &__img {
+    flex: 1;
+    transform: translateY(50px);
+    transition: transform 1s ease;
+
+    @include media('s') {
+      max-width: 60%;
+    }
+
+    &.visible {
+      transform: translateY(0);
+    }
+  }
+
+  &__description {
+    @include flexColumn($align: flex-start);
+    flex: 1;
+    gap: 20px;
+    padding: 0 2rem;
+    text-align: left;
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__buttons {
+    @include flex();
+    gap: 30px;
+  }
+}

@@ -1,0 +1,29 @@
+// abstract
+@import 'abstracts/variables.scss';
+@import 'abstracts/mixins';
+
+/* Base */
+@import 'base/reset';
+@import 'base/basic';
+
+/* Components */
+@import 'components/about';
+@import 'components/authorization';
+@import 'components/buttons';
+@import 'components/docs.scss';
+@import 'components/dog.scss';
+@import 'components/editor.scss';
+@import 'components/fieldSchema.scss';
+@import 'components/language.scss';
+@import 'components/team.scss';
+@import 'components/plus.scss';
+@import 'components/video.scss';
+
+/* Layout */
+@import 'layout/header';
+@import 'layout/footer';
+
+/* Pages */
+@import 'pages/main';
+@import 'pages/notFound';
+@import 'pages/welcome.scss';
