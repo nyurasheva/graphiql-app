@@ -1,10 +1,16 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Navigate, useLocation } from 'react-router-dom';
+import { AUTH_ROUTE, MAIN_ROUTE } from '../constants/route';
 import { RegistrationForm } from '../components';
-import { AUTH_ROUTE } from '../constants/route';
 import { Localization } from '../context/LocalContext';
+import { useAppSelector } from '../store/types';
 
 const Registration = () => {
+  const { isAuth } = useAppSelector((state) => state.user);
   const { translations } = Localization();
+  const location = useLocation();
+  if (isAuth) {
+    return <Navigate to={MAIN_ROUTE} state={{ from: location }} replace />;
+  }
   return (
     <div className="container">
       <div className="authorization">
